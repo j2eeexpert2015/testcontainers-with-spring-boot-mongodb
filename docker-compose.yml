@@ -1,0 +1,8 @@
+services:
+  mongodb_external:
+    # Specifies the Docker image to use (MongoDB version 4.4.2)
+    image: mongo:4.4.2
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: testdb
